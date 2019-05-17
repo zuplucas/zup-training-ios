@@ -10,6 +10,7 @@
 		639973AA228CCDA300D477CD /* Lending.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639973A9228CCDA300D477CD /* Lending.swift */; };
 		639973AC228CD21800D477CD /* LendingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639973AB228CD21800D477CD /* LendingService.swift */; };
 		639973AE228CE69500D477CD /* ListerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639973AD228CE69500D477CD /* ListerViewController.swift */; };
+		D15A6C93228E38D200BC9A6B /* LendingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15A6C92228E38D200BC9A6B /* LendingDetailViewController.swift */; };
 		D1DF89D6228B77D100907927 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF89D5228B77D100907927 /* AppDelegate.swift */; };
 		D1DF89D8228B77D100907927 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DF89D7228B77D100907927 /* RegisterViewController.swift */; };
 		D1DF89DB228B77D100907927 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1DF89D9228B77D100907927 /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		639973A9228CCDA300D477CD /* Lending.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lending.swift; sourceTree = "<group>"; };
 		639973AB228CD21800D477CD /* LendingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingService.swift; sourceTree = "<group>"; };
 		639973AD228CE69500D477CD /* ListerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListerViewController.swift; sourceTree = "<group>"; };
+		D15A6C92228E38D200BC9A6B /* LendingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LendingDetailViewController.swift; sourceTree = "<group>"; };
 		D1DF89D2228B77D100907927 /* SkyFirstApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyFirstApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1DF89D5228B77D100907927 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1DF89D7228B77D100907927 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				639973A9228CCDA300D477CD /* Lending.swift */,
 				639973AB228CD21800D477CD /* LendingService.swift */,
 				639973AD228CE69500D477CD /* ListerViewController.swift */,
+				D15A6C92228E38D200BC9A6B /* LendingDetailViewController.swift */,
 			);
 			path = SkyFirstApp;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				639973AC228CD21800D477CD /* LendingService.swift in Sources */,
 				D1DF89D8228B77D100907927 /* RegisterViewController.swift in Sources */,
 				D1DF89D6228B77D100907927 /* AppDelegate.swift in Sources */,
+				D15A6C93228E38D200BC9A6B /* LendingDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,13 +301,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SkyFirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.sky.SkyFirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -314,13 +319,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SkyFirstApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.sky.SkyFirstApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
