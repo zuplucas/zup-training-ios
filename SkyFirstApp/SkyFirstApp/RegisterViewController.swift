@@ -26,6 +26,12 @@ class RegisterViewController: UIViewController {
         frmView.layer.cornerRadius = 5
     }
     
+    private func clearForm() {
+        friendTextField.text = ""
+        objectTextField.text = ""
+        datePicker.setDate(Date(), animated: true)
+    }
+    
     @IBAction func onSaveTouchInside(_ sender: UIButton) {
         print("touched on salvar")
         guard let name = friendTextField.text,
@@ -36,6 +42,8 @@ class RegisterViewController: UIViewController {
         
         let lending = Lending(name: name, object: object, date: datePicker.date)
         LendingService.instance.lendings.append(lending)
+        
+        clearForm()
     }
 }
 

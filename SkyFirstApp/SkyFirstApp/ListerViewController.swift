@@ -19,7 +19,7 @@ class ListerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setupStyle()
         // Do any additional setup after loading the view.
     }
     
@@ -29,9 +29,12 @@ class ListerViewController: UIViewController {
     }
     
     private func setupValues() {
-        lendings = LendingService.instance.lendings.sorted()
+        lendings = LendingService.instance.lendings.sorted().reversed()
     }
 
+    private func setupStyle() {
+        tableView.tableFooterView = UIView()
+    }
     
     // MARK: - Navigation
 
@@ -64,7 +67,6 @@ extension ListerViewController:UITableViewDataSource {
         cell.detailTextLabel?.text = lending.object + " - " + dateFormatter.string(from: lending.date)
         return cell
     }
-    
     
     
 }
