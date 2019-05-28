@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B7AABFB6BE7C460BCCEEB306 /* Pods_SkyLodjinha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9E678E1FFF910717B668E8 /* Pods_SkyLodjinha.framework */; };
 		D1E5933B22975470002697E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5933A22975470002697E7 /* AppDelegate.swift */; };
 		D1E5934222975473002697E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E5934122975473002697E7 /* Assets.xcassets */; };
 		D1E5934522975473002697E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E5934322975473002697E7 /* LaunchScreen.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27BB816280AC9950921E0A26 /* Pods-SkyLodjinha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyLodjinha.debug.xcconfig"; path = "Target Support Files/Pods-SkyLodjinha/Pods-SkyLodjinha.debug.xcconfig"; sourceTree = "<group>"; };
+		4B9E678E1FFF910717B668E8 /* Pods_SkyLodjinha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyLodjinha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75CD5D998102BD579FA68224 /* Pods-SkyLodjinha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyLodjinha.release.xcconfig"; path = "Target Support Files/Pods-SkyLodjinha/Pods-SkyLodjinha.release.xcconfig"; sourceTree = "<group>"; };
 		D1E5933722975470002697E7 /* SkyLodjinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyLodjinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E5933A22975470002697E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E5934122975473002697E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7AABFB6BE7C460BCCEEB306 /* Pods_SkyLodjinha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45F160DD5F865034F41F7F48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				27BB816280AC9950921E0A26 /* Pods-SkyLodjinha.debug.xcconfig */,
+				75CD5D998102BD579FA68224 /* Pods-SkyLodjinha.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		6A223FECF0247194A543C6BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B9E678E1FFF910717B668E8 /* Pods_SkyLodjinha.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1E5932E22975470002697E7 = {
 			isa = PBXGroup;
 			children = (
 				D1E5933922975470002697E7 /* SkyLodjinha */,
 				D1E5933822975470002697E7 /* Products */,
+				45F160DD5F865034F41F7F48 /* Pods */,
+				6A223FECF0247194A543C6BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,9 +156,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1E5934922975473002697E7 /* Build configuration list for PBXNativeTarget "SkyLodjinha" */;
 			buildPhases = (
+				B68CCB7EF9878EE55F8536EB /* [CP] Check Pods Manifest.lock */,
 				D1E5933322975470002697E7 /* Sources */,
 				D1E5933422975470002697E7 /* Frameworks */,
 				D1E5933522975470002697E7 /* Resources */,
+				34E63B164E1A3284EFC91120 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,6 +218,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34E63B164E1A3284EFC91120 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyLodjinha/Pods-SkyLodjinha-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SkyLodjinha/Pods-SkyLodjinha-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkyLodjinha/Pods-SkyLodjinha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B68CCB7EF9878EE55F8536EB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SkyLodjinha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D1E5933322975470002697E7 /* Sources */ = {
@@ -336,6 +405,7 @@
 		};
 		D1E5934A22975473002697E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 27BB816280AC9950921E0A26 /* Pods-SkyLodjinha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +423,7 @@
 		};
 		D1E5934B22975473002697E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75CD5D998102BD579FA68224 /* Pods-SkyLodjinha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
