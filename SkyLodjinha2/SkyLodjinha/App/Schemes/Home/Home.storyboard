@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oKc-rQ-ZJO">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="SIp-RM-Vjp">
+            <objects>
+                <navigationController id="oKc-rQ-ZJO" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bIN-Wk-Fg1">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.0019352455799939161" green="0.085928604491068872" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xKq-39-js2" kind="relationship" relationship="rootViewController" id="ogz-b0-3Uh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2O-ZL-dv3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Lojinha-->
+        <scene sceneID="ezi-qW-jxw">
+            <objects>
+                <viewController id="xKq-39-js2" customClass="HomeViewController" customModule="SkyLodjinha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0Mc-TT-zJ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GtK-WF-oiC">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jf2-Ac-5EX">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="193.5"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WJY-q3-08y">
+                                        <rect key="frame" x="0.0" y="193.5" width="414" height="193.5"/>
+                                    </containerView>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qe6-oW-l4P">
+                                        <rect key="frame" x="0.0" y="387" width="414" height="387"/>
+                                        <connections>
+                                            <segue destination="9qx-fO-4bI" kind="embed" id="YS1-m3-y0A"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Jf2-Ac-5EX" firstAttribute="height" secondItem="GtK-WF-oiC" secondAttribute="height" multiplier="0.25" id="G6s-n8-5nd"/>
+                                    <constraint firstItem="WJY-q3-08y" firstAttribute="height" secondItem="GtK-WF-oiC" secondAttribute="height" multiplier="0.25" id="yd1-d5-DBA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nrJ-wf-UGv" firstAttribute="trailing" secondItem="GtK-WF-oiC" secondAttribute="trailing" id="TON-bw-GrV"/>
+                            <constraint firstItem="GtK-WF-oiC" firstAttribute="leading" secondItem="nrJ-wf-UGv" secondAttribute="leading" id="auA-cW-RPk"/>
+                            <constraint firstItem="nrJ-wf-UGv" firstAttribute="bottom" secondItem="GtK-WF-oiC" secondAttribute="bottom" id="cEU-50-0TG"/>
+                            <constraint firstItem="GtK-WF-oiC" firstAttribute="top" secondItem="nrJ-wf-UGv" secondAttribute="top" id="ekt-Wg-Qef"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nrJ-wf-UGv"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Lojinha" id="WaS-fa-eST"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cN6-Qc-176" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="21"/>
+        </scene>
+        <!--BestSellers-->
+        <scene sceneID="rRb-GP-dlv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="BestSellers" id="9qx-fO-4bI" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wmi-ZO-cny" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2234" y="173"/>
+        </scene>
+    </scenes>
+</document>
