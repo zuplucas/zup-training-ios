@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B7AABFB6BE7C460BCCEEB306 /* Pods_SkyLodjinha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B9E678E1FFF910717B668E8 /* Pods_SkyLodjinha.framework */; };
+		D136EAE0229DF2FF006E341B /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136EADF229DF2FF006E341B /* Category.swift */; };
+		D136EAE2229DF477006E341B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136EAE1229DF477006E341B /* Product.swift */; };
+		D136EAE6229DFA2A006E341B /* BestSellersTargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136EAE5229DFA2A006E341B /* BestSellersTargetType.swift */; };
+		D136EAE8229DFFF3006E341B /* BestSellersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D136EAE7229DFFF3006E341B /* BestSellersService.swift */; };
 		D1E5933B22975470002697E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E5933A22975470002697E7 /* AppDelegate.swift */; };
 		D1E5934222975473002697E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1E5934122975473002697E7 /* Assets.xcassets */; };
 		D1E5934522975473002697E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1E5934322975473002697E7 /* LaunchScreen.storyboard */; };
@@ -23,6 +27,10 @@
 		27BB816280AC9950921E0A26 /* Pods-SkyLodjinha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyLodjinha.debug.xcconfig"; path = "Target Support Files/Pods-SkyLodjinha/Pods-SkyLodjinha.debug.xcconfig"; sourceTree = "<group>"; };
 		4B9E678E1FFF910717B668E8 /* Pods_SkyLodjinha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkyLodjinha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CD5D998102BD579FA68224 /* Pods-SkyLodjinha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkyLodjinha.release.xcconfig"; path = "Target Support Files/Pods-SkyLodjinha/Pods-SkyLodjinha.release.xcconfig"; sourceTree = "<group>"; };
+		D136EADF229DF2FF006E341B /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		D136EAE1229DF477006E341B /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		D136EAE5229DFA2A006E341B /* BestSellersTargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersTargetType.swift; sourceTree = "<group>"; };
+		D136EAE7229DFFF3006E341B /* BestSellersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BestSellersService.swift; sourceTree = "<group>"; };
 		D1E5933722975470002697E7 /* SkyLodjinha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyLodjinha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1E5933A22975470002697E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1E5934122975473002697E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +62,6 @@
 				27BB816280AC9950921E0A26 /* Pods-SkyLodjinha.debug.xcconfig */,
 				75CD5D998102BD579FA68224 /* Pods-SkyLodjinha.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,32 @@
 				4B9E678E1FFF910717B668E8 /* Pods_SkyLodjinha.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D136EADE229DF2EB006E341B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D136EADF229DF2FF006E341B /* Category.swift */,
+				D136EAE1229DF477006E341B /* Product.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D136EAE3229DF9FD006E341B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D136EAE4229DFA09006E341B /* Target Type */,
+				D136EAE7229DFFF3006E341B /* BestSellersService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D136EAE4229DFA09006E341B /* Target Type */ = {
+			isa = PBXGroup;
+			children = (
+				D136EAE5229DFA2A006E341B /* BestSellersTargetType.swift */,
+			);
+			path = "Target Type";
 			sourceTree = "<group>";
 		};
 		D1E5932E22975470002697E7 = {
@@ -106,6 +139,8 @@
 		D1E5934D229754EF002697E7 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				D136EAE3229DF9FD006E341B /* Service */,
+				D136EADE229DF2EB006E341B /* Model */,
 				D1E5934E22975560002697E7 /* Schemes */,
 				D1E5933A22975470002697E7 /* AppDelegate.swift */,
 			);
@@ -267,9 +302,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1E5935D22975FBD002697E7 /* BestSellersTableViewCell.swift in Sources */,
+				D136EAE0229DF2FF006E341B /* Category.swift in Sources */,
 				D1E5933B22975470002697E7 /* AppDelegate.swift in Sources */,
 				D1E5935822975BAE002697E7 /* BestSellersViewController.swift in Sources */,
+				D136EAE8229DFFF3006E341B /* BestSellersService.swift in Sources */,
 				D1E59353229755A6002697E7 /* HomeViewController.swift in Sources */,
+				D136EAE6229DFA2A006E341B /* BestSellersTargetType.swift in Sources */,
+				D136EAE2229DF477006E341B /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
